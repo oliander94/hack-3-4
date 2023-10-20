@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800&family=Dancing+Script&family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@800&family=Poppins:wght@200;300&family=Ruda:wght@400;500;600;700;800;900&display=swap');
+
+
+*:root{
+    --clr-mustard: #B88940;
+    --clr-line: #FFBD59;
+    --clr-black: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ruda', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header>span:nth-child(1){
+    padding: 15vh 0 .5vh;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header>span:nth-child(1)::before{
+    width: 25%;
+    height: .5rem;
+    margin-bottom: 2.5rem;
+    content: "";
+    background-color: var(--clr-black);
+    border-radius: 20px;
+}
+
+header>span:nth-child(2){
+    margin-top: -1rem;
+    font-size: 12rem;
+    font-weight: 900;
+    letter-spacing: 1.7rem;
+    color: var(--clr-mustard);
+    
+}
+
+header>span:nth-child(3){
+    margin-top: -.5rem;
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--clr-black);
+}
+
+
+header>span:nth-child(4){
+    margin-top: 2rem;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    color: var(--clr-black);
+
+}
+
+
+main{
+    margin-top: 5rem;
+    height: 100vh;
+}
+
+.line{
+    position: absolute;
+    padding-top: 2rem;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.line>div{
+    height: 3rem;
+    background-color: var(--clr-line);
+    margin-bottom: 3rem;
+}
+
+.line>div:nth-child(1){
+    margin-top: 6rem;
+}
+
+.container-img{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container-img>div{
+    height: 75vh;
+    width: 22%;
+    margin-top: -2rem;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container-img>div:nth-child(1){
+    background-image: url(/img/1.png);
+}
+.container-img>div:nth-child(2){
+    background-image: url(/img/2.png);
+}
+.container-img>div:nth-child(3){
+    background-image: url(/img/3.png);
+
+}
+
+.container-img>div:nth-child(n)::after{
+    position: relative;
+    width: 100%;
+    top: 78vh;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.container-img>div:nth-child(1)::after{
+    content: "lorem . $200";
+
+}
+
+.container-img>div:nth-child(2)::after{
+    content: "lorem . $300";
+
+}
+.container-img>div:nth-child(3)::after{
+    content: "lorem . $400";
+
+}
+
+
+footer{
+    margin: 10rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 3.5rem;
+}
+
+footer>span:nth-child(1){
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--clr-mustard);
+    letter-spacing: .5rem;
+}
+
+footer>span:nth-child(2){
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
